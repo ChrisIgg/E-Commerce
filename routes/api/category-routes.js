@@ -40,7 +40,7 @@ router.post("/", async (req, res) => {
     category_name: req.body.category_name,
   })
     .then((newCategory) => {
-      res.json("Created Category");
+      res.json(newCategory);
     })
     .catch((err) => {
       res.status(500).json(err);
